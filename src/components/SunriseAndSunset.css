@@ -1,0 +1,19 @@
+.wrapper {
+    border-radius: 11px;
+background: #FDFCFC;
+padding: 5px 20px;
+}
+
+.daylight {
+    font-size: 10px;
+    color: #9A9A9A;
+font-family: Poppins;
+font-weight: 500;
+}
+
+.length-of-day {
+    color: #2C2C2C;
+font-family: Poppins;
+font-size: 10px;
+font-weight: 400;
+}
