@@ -1,17 +1,18 @@
 import React from 'react'
 import './SunriseAndSunset.css'
-import graphic from '../assets/Component 3.png';
+import sunriseSunset from '../assets/sunrise_sunset.svg';
 
-const SunriseAndSunset = () => {
+const SunriseAndSunset = (props) => {
   return (
     <div className='flex flex-col mt-5 wrapper'>
         <div className='flex flex-col gap-5'>
             <p className='details-title'>SUNRISE AND SUNSET</p>
-            <img src={graphic} alt='' />
+            <img src={sunriseSunset} alt='' />
+            <p>06:00 AM</p>
         </div>
         <div className='flex flex-col pt-10'>
-            <p className='daylight'>Length of the day: <span className='length-of-day'>13H 12M</span></p>
-            <p className='daylight'>Remaining daylight: <span className='length-of-day'>9H 22M</span></p>
+            <p className='temp'>Maximum Temperature: <span>Math.floor({props.weather?.main?.temp_max}) °</span></p>
+            <p className='temp'>Minimum Temperature: <span>Math.floor({props.weather?.main?.temp_min}) °</span></p>
         </div>
     </div>
   )
