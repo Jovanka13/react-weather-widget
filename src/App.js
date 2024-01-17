@@ -19,13 +19,13 @@ function App() {
   return (
     <div className="mx-auto max-w-sm mt-5 py-3 px-5 h-fit">
       <SearchBar />
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
+      <div id="carouselExampleIndicators" className="carousel slide">
+        <div className="carousel-indicators">
           <button
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide-to="0"
-            class="active"
+            className="active"
             aria-current="true"
             aria-label="Slide 1"
           ></button>
@@ -42,14 +42,14 @@ function App() {
             aria-label="Slide 3"
           ></button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
             <Layout />
           </div>
-          <div class="carousel-item">
+          <div className="carousel-item">
             <Layout />
           </div>
-          <div class="carousel-item">
+          <div className="carousel-item">
             <Layout />
           </div>
         </div>
