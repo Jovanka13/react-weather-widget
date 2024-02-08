@@ -1,5 +1,4 @@
 import React from 'react';
-import './WeatherDetails.css';
 
 function WeatherDetails(props) {
     const getWeatherTime = () => {
@@ -10,22 +9,22 @@ function WeatherDetails(props) {
     }
 
     return (
-        <div className='flex flex-row items-center justify-between weather-details-container'>
+        <div className='flex flex-row items-center justify-between rounded-lg bg-[#FDFCFC] px-5 py-1'>
             <div className='flex flex-col items-center justify-center'>
-                <p className='details-title font-light text-sm'>TIME</p>
-                <p className='details-paragraph font-medium'>{getWeatherTime()}</p>
+                <p className='text-[#C4C4C4] font-medium text-xs'>TIME</p>
+                <p className='text-[#9A9A9A] text-sm font-medium'>{getWeatherTime()}</p>
             </div>
             <div className='flex flex-col items-center justify-center'>
-                <p className='details-title font-light text-sm'>FEELS LIKE</p>
-                <p className='details-paragraph font-medium'>Math.floor({props.weather?.main?.feels_like}) °</p>
+                <p className='text-[#C4C4C4] font-medium text-xs'>FEELS LIKE</p>
+                <p className='text-[#9A9A9A] text-sm font-medium'>{Math.floor(props.weather?.main?.feels_like)} °</p>
             </div>
             <div className='flex flex-col items-center justify-center'>
-                <p className='details-title font-light text-sm'>HUMIDITY</p>
-                <p className='details-paragraph font-medium'>{props.weather?.main?.humidity} %</p>
+                <p className='text-[#C4C4C4] font-medium text-xs'>HUMIDITY</p>
+                <p className='text-[#9A9A9A] text-sm font-medium'>{props.weather?.main?.humidity} %</p>
             </div>
             <div className='flex flex-col items-center justify-center'>
-                <p className='details-title font-light text-sm'>WIND SPEED</p>
-                <p className='details-paragraph font-medium'>Math.floor({props.weather?.wind?.speed}) m/s</p>
+                <p className='text-[#C4C4C4] font-medium text-xs'>WIND SPEED</p>
+                <p className='text-[#9A9A9A] text-sm font-medium'>{Math.floor(props.weather?.wind?.speed)} m/s</p>
             </div>
         </div>
 

@@ -18,7 +18,7 @@ const WeatherWidget = () => {
         params: {
           q: location,
           appid: API_KEY,
-          units: 'metric', 
+          units: 'metric',
         },
       });
       setWeather(response.data.weather[0].main);
@@ -32,7 +32,7 @@ const WeatherWidget = () => {
   };
 
   useEffect(() => {
-    
+
 
   }, []);
 
