@@ -9,3 +9,10 @@
         font-family: 'Poppins', sans-serif;
     }
 }
+
+.carousel-indicators [data-bs-target] {
+    background-color: grey;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}

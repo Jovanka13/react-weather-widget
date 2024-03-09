@@ -20,7 +20,7 @@ function App() {
                                 type="button"
                                 data-bs-target="#carouselExampleIndicators"
                                 data-bs-slide-to={index}
-                                className={`${activeCarouselItem === index ? 'active' : ''} absolute top-5 bg-grey-700`}
+                                className={`${activeCarouselItem === index ? 'active' : ''}`}
                                 onClick={() => setActiveCarouselItem(index)}
                             ></button>
                         })
